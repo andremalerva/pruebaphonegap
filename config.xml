@@ -6,7 +6,7 @@
         id        = "com.totalcontent.app"
         version   = "1.0.0">
 
-    <name>Total Content</name>
+    <name>PHONEGAP</name>
 
    <description>
       Aplicación para uso exclusivo de los Socios de TotalContent. 
