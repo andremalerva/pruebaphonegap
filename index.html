@@ -25,13 +25,14 @@
         <meta name="viewport" content="user-scalable=no, initial-scale=1, minimum-scale=1, width=device-width" />
         <!--<link rel="stylesheet" type="text/css" href="css/global.css">-->
         <!----->
+        <script type="text/javascript" src="cordova.js"></script>
        
     </head>
     
     <body>
          <script type="text/javascript">
-            /*window.location = "https://www.occus.mx/"; */
-             function checkConnection() {
+            /*window.location = "https://www.occus.mx/";
+            function checkConnection() {
                  var networkState = navigator.network.connection.type;
                  var states = {};
                  states[Connection.UNKNOWN] = ‘Unknown connection’;
@@ -45,13 +46,23 @@
              } 
              function onDeviceReady() {
                  var networkState = checkConnection();
-                 /* load local files if there is not network connection */
+                 load local files if there is not network connection 
                  if (networkState == Connection.NONE) {
                  navigator.notification.alert(‘This app requires an internet connection’);
                  } else {
                  window.location="https://www.occus.mx/";
                  }
              }
+             function onDeviceReady() {
+
+
+
+
+    window.open = cordova.InAppBrowser.open;
+
+    var windowref = window.open('http://app.totalcontent.mx/', '_blank', 'location=no'); */
+             var ref = window.open ('https://www.occus.mx/', 'location=yes');
+            Ref.Show();
         </script> 
          <!---
 <h4> CORDOVA APPLICATION</h4>
