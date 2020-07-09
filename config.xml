@@ -106,5 +106,5 @@
    <icon src="icon.png" />
 
    <content src="index.html" />
-   <access origin="*" subdomains="true" />
+   <access origin="https://www.occus.mx/" subdomains="true" />
 </widget>
